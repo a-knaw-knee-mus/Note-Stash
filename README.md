@@ -1,6 +1,6 @@
 # Note Stash
 - Note taking web app created using the MERN stack, with Google Oauth2.0 for customized notes for each user.
-- Since it uses Google Oauth for authentication, not passwords or sensitive information are saved on our end
+- Since it uses Google Oauth for authentication, no passwords or sensitive information are saved on our end
 
 ## Upcoming Features
 - Hash messages on the database for increased security
