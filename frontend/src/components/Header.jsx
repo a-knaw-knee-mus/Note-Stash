@@ -6,6 +6,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+// Navbar
 function Header(props) {
     const context = useContext(myContext)
 
