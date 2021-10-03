@@ -8,5 +8,6 @@
 - Add a real-time visual for the letter limit so the user knows when their note is too large (make the text red when the limit is exceeded)
 - Ability to add images to a note
 - Ability to export notes to a .txt/.json file
+- Ability to submit a note with only a title (no content)
 
 ## Try it Here! => https://note-stash.netlify.app/
