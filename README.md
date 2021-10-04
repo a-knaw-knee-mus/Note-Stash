@@ -9,6 +9,6 @@
 - Ability to add images to a note
 - Ability to export notes to a .txt/.json file
 - Ability to make a note with only a title (no content)
-- Fix the footer
+- ~~Fix the footer~~
 
 ## Try it Here! => https://note-stash.netlify.app/
