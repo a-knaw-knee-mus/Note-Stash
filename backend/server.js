@@ -71,16 +71,13 @@ passport.use(new GoogleStrategy({
     callbackURL: "/auth/google/callback"
 },
     function(accessToken, refreshToken, profile, cb){
-        console.log("GETTING USER")
         console.log(profile.id)
         User.findOne({googleId: profile.id}, async (err, doc) => {
             if (err) {
-                console.log("THERES IS AN ERROR")
                 return cb(err, null);
             }
 
             if (!doc) {
-                console.log("NO USER")
                 const newUser = new User({
                     googleId: profile.id,
                     username: profile.name.givenName,
@@ -105,7 +102,6 @@ app.get("/auth/google",
 app.get("/auth/google/callback",
     passport.authenticate("google", {failureRedirect: "https://note-stash.netlify.app", session: true}),
     (req, res) => {
-        console.log("WE HERE")
         res.redirect('https://note-stash.netlify.app')
     })
 
